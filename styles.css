@@ -39,3 +39,18 @@
 .social-link:hover {
   transform: scale(1.1);
 }
+
+.contact-chip {
+  display: inline-flex;
+  align-items: center;
+  background-color: #10b981; /* Tailwind green-500 */
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-chip:hover {
+  transform: scale(1.1);
+}
+
