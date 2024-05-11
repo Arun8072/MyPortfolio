@@ -27,3 +27,15 @@
 .timeline-item:last-child::after {
   display: none;
 }
+
+.social-link {
+  display: inline-block;
+  background-color: #10b981; /* Tailwind green-500 */
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
