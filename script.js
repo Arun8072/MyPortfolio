@@ -69,16 +69,16 @@ contactChips.forEach((chip) => {
   });
 });
 
-//show more
+// Show/Hide additional courses
 const showMoreBtn = document.getElementById('show-more-btn');
-const additionalProjects = document.querySelector('.additional-projects');
+const additionalCourses = document.querySelector('.additional-courses');
+const courseCards = document.getElementById('course-cards');
 
 showMoreBtn.addEventListener('click', () => {
-  additionalProjects.classList.toggle('hidden');
-  if (additionalProjects.classList.contains('hidden')) {
+  additionalCourses.classList.toggle('d-none');
+  if (additionalCourses.classList.contains('d-none')) {
     showMoreBtn.textContent = 'Show More';
   } else {
     showMoreBtn.textContent = 'Show Less';
   }
 });
-
