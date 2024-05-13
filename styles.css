@@ -150,3 +150,49 @@ img {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+
+  /* Add this to your styles.css file */
+.glassmorphism-card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 38px;
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-content {
+  max-width: 500px;
+}
+
+.gif-container {
+  margin-left: 30px;
+}
+
+.course-gif {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+
+@media (min-width: 768px) {
+  .glassmorphism-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .gif-container {
+    margin-bottom: 0;
+    margin-left: 30px;
+  }
+
+  .card-content {
+    text-align: left;
+  }
+}

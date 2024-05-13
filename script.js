@@ -75,10 +75,11 @@ const additionalCourses = document.querySelector('.additional-courses');
 const courseCards = document.getElementById('course-cards');
 
 showMoreBtn.addEventListener('click', () => {
-  additionalCourses.classList.toggle('d-none');
+  additionalCourses.classList.remove('d-none');
   if (additionalCourses.classList.contains('d-none')) {
     showMoreBtn.textContent = 'Show More';
   } else {
-    showMoreBtn.textContent = 'Show Less';
+    
+    showMoreBtn.textContent = 'Show All';
   }
 });
