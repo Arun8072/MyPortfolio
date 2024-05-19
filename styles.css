@@ -4,7 +4,13 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-
+a{
+  text-decoration: unset;
+  color: #10b981;
+}
+a:hover{
+  color:#b2e05b;
+}
 .timeline-item {
   position: relative;
   padding-left: 2rem;
@@ -195,4 +201,22 @@ img {
   .card-content {
     text-align: left;
   }
+}
+
+@media (orientation: landscape) {
+ .hide-in-large{
+  display:none;
+ }
+ .hide-in-small{
+  display: inline;
+ }
+}
+
+@media (orientation: portrait) {
+ .hide-in-large{
+  display:inline;
+ }
+ .hide-in-small{
+  display: none;
+ } 
 }
