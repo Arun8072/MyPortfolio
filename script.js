@@ -79,7 +79,7 @@ showMoreBtn.addEventListener('click', () => {
   if (additionalCourses.classList.contains('d-none')) {
     showMoreBtn.textContent = 'Show More';
   } else {
-    
-    showMoreBtn.textContent = 'Show All';
+    /*add another  full course section or modal to display aLL
+    showMoreBtn.textContent = 'Show All'; */
   }
 });
