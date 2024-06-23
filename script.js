@@ -1,16 +1,21 @@
 
 // Show/Hide additional courses
 const showMoreBtnC = document.getElementById('showMore-course');
-const additionalCourses = document.querySelector('.additional-courses');
-//const courseCards = document.getElementById('course-cards');
+const additionalCourses = document.getElementById('additional-courses');
+const allCourses = document.getElementById('all-courses');
 
 showMoreBtnC.addEventListener('click', () => {
-  additionalCourses.classList.remove('d-none');
-  if (additionalCourses.classList.contains('d-none')) {
+
+  if (additionalCourses.classList.contains('d-none') && allCourses.classList.contains('d-none') ) {
+    additionalCourses.classList.remove('d-none');
+    showMoreBtnC.textContent = 'Show All';
+  } else if (allCourses.classList.contains('d-none') && !additionalCourses.classList.contains('d-none')){
+    allCourses.classList.remove('d-none');
+    showMoreBtnC.textContent = 'Show Less';
+  }else if (!additionalCourses.classList.contains('d-none') && !allCourses.classList.contains('d-none')){
+    additionalCourses.classList.add('d-none');
+    allCourses.classList.add('d-none'); 
     showMoreBtnC.textContent = 'Show More';
-  } else {
-    /* add another  full course section or modal to display aLL
-    showMoreBtnC.textContent = 'Show All'; */
   }
 });
 
