@@ -172,9 +172,7 @@ img {
   justify-content: space-between;
 }
 
-.card-content {
-  max-width: 500px;
-}
+
 
 .gif-container {
   margin-left: 25px;
@@ -223,6 +221,9 @@ img {
  .hide-in-small{
   display: block;
  }
+ .card-content {
+  max-width: 700px;
+}
 }
 
 @media (orientation: portrait) {
